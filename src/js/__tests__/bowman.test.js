@@ -45,7 +45,6 @@ test('Character damage health is 0 ', () => {
 test('Character levelUp', () => {
   const char = new Bowman('Robin');
   char.levelUp();
-  console.log(char);
   const correctChar = {
     name: 'Robin',
     type: 'Bowman',
