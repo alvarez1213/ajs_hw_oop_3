@@ -17,7 +17,7 @@ test('test correct create Bowman', () => {
 
 test('Character damage()', () => {
   const char = new Bowman('Robin');
-  char.damage(10);  
+  char.damage(10);
   expect(char.health).toBe(92.5);
 });
 
@@ -30,14 +30,14 @@ test('Character damage Error', () => {
 
 test('Character damage health is 0 ', () => {
   const char = new Bowman('Robin');
-  char.damage(200);  
+  char.damage(200);
   const correctChar = {
     name: 'Robin',
     type: 'Bowman',
     health: 0,
     level: 1,
     attack: 25,
-    defence: 25
+    defence: 25,
   };
   expect(char).toEqual(correctChar);
 });
@@ -52,8 +52,8 @@ test('Character levelUp', () => {
     health: 100,
     level: 2,
     attack: 30,
-    defence: 30
-  }
+    defence: 30,
+  };
   expect(char).toEqual(correctChar);
 });
 
